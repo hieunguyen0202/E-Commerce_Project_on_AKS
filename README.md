@@ -18,6 +18,8 @@
 
 ## Architecture
 
+![Deploy an E-Commerce Project on AKS drawio](https://github.com/hieunguyen0202/E-Commerce_Project_on_AKS/assets/98166568/150751ba-2102-43dd-aa10-5b9ca9a1fb40)
+
 ## Implementation
 
 
