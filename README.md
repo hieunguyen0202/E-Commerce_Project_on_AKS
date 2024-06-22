@@ -49,7 +49,12 @@
   ```
   helm install robot-shop --namespace robot-shop .
   ```
+- To unintall
 
+  ```
+  helm uninstall robot-shop --namespace robot-shop
+
+  ```
 - Check some pod and services running
 
   ```
