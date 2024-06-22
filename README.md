@@ -39,10 +39,13 @@
   ```
   git clone https://github.com/hieunguyen0202/E-Commerce_Project_on_AKS.git
   ```
-- Go to `GKE` folder and helm` folder and inside this folder run this command
+- Go to `GKE` folder and `helm` folder and inside this folder run this command
 
   ```
   kubectl create ns robot-shop
   ```
+- And package for all manifests file
 
-
+  ```
+  helm install robot-shop --namespace robot-shop .
+  ```
