@@ -18,5 +18,31 @@
 ![Deploy an E-Commerce Project on AKS drawio](https://github.com/hieunguyen0202/E-Commerce_Project_on_AKS/assets/98166568/150751ba-2102-43dd-aa10-5b9ca9a1fb40)
 
 ## Implementation
+#### Create kubernetes cluster on Azure/GCP 
+- Choose name `gitops-cluster`
+- Enable autoscaling node for min `1` and max `2`, enable for IP of pod
+
+#### Connect to Kubernetes cluster
+- For Azure Kubernetes services
+
+  ```
+  az aks get-credentials --resource-group resourcegroupname --name clustername
+  ```
+- For Google Kubernetes Engine
+
+  ```
+  gcloud container clusters get-credentials CLUSTER_NAME --region=CLUSTER_REGION
+  ```
+#### Setup for Helm Chart
+- Clone this source code
+
+  ```
+  git clone https://github.com/hieunguyen0202/E-Commerce_Project_on_AKS.git
+  ```
+- Go to `GKE` folder and helm` folder and inside this folder run this command
+
+  ```
+  kubectl create ns robot-shop
+  ```
 
 
