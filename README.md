@@ -49,3 +49,30 @@
   ```
   helm install robot-shop --namespace robot-shop .
   ```
+
+- Check some pod and services running
+
+  ```
+  kubectl get pods -n robot-shop
+  kubectl get svc -n robot-shop
+  ```
+#### Create Ingress Service
+- Modify this `ingress.yaml` file
+
+  ```
+  vim ingress.yaml
+  ```
+
+- Create
+
+  ```
+  kubectl apply -f ingress.yaml -n robot-shop
+  ```
+
+- Check status
+
+  ```
+  kubectl get pods -n kube-system
+  kubectl get ing -n robot-shop
+  ```
+
